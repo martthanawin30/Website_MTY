@@ -2523,7 +2523,7 @@ input, select, textarea {
 			position: absolute;
 			left: 0;
 			top: 0;
-			background-image: url("images/overlay.png");
+		  /* background-image: url("images/overlay.png"); */
 			width: 100%;
 			height: 100%;
 			z-index: 1;
@@ -3447,6 +3447,35 @@ input, select, textarea {
 		position: absolute;
 	}
 
+
+    /* Automatic heading numbering: h3 = 1,2,3... and h4 = 1.1, 1.2... */
+            body { counter-reset: h3; }
+
+            h3 {
+              counter-reset: h4; /* reset subheading counter each time a new h3 appears */
+            }
+            h3::before {
+              counter-increment: h3;
+              content: counter(h3) ". ";
+            }
+
+            h4::before {
+              counter-increment: h4;
+              content: counter(h3) "." counter(h4) " ";
+            }
+
+
+  /* Except the footer */
+            #footer h3::before {
+            content: none;
+            counter-increment: none;
+            }
+
+
+
+
+
+
 /* Banner */
 
 	#banner {
@@ -3510,20 +3539,27 @@ input, select, textarea {
 					top: 0;
 				}
 
-			#banner .content .image {
-				border-radius: 100%;
-				display: inline-block;
-				height: 18em;
-				margin-left: 3em;
-				vertical-align: middle;
-				width: 18em;
-			}
+    /* Banner */
+              #banner .content .image {
+              width: 12em;        /* increase or decrease size */
+              height: 15em;        /* increase or decrease size */
+              border-radius: 2px;
+              overflow: hidden;
+              border: 1px solid rgba(100,100,100,0.6);
+              margin-left: 3em; /* smaller gap than 5em */
+              vertical-align: middle;
+              display: inline-block;
+            }
 
-				#banner .content .image img {
-					border-radius: 100%;
-					display: block;
-					width: 100%;
-				}
+            #banner .content .image img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: center;
+              border-radius: 0;
+              display: block;
+            }
+
 
 	body.is-touch #banner {
 		background-attachment: scroll;

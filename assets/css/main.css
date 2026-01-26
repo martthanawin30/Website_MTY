@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	html, body {
-		background: #1c1d26;
+		background:#05122d;
 	}
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -105,18 +105,19 @@ input, select, textarea {
 		line-height: 1.75em;
 	}
 
+/* Link */
 	a {
 		-moz-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #e44c65;
+		color: #FFD700;
 		text-decoration: none;
 	}
 
 		a:hover {
-			color: #e44c65 !important;
+			color: #FFD700 !important;
 			border-bottom-color: transparent;
 		}
 
@@ -2154,7 +2155,7 @@ input, select, textarea {
 	}
 
 	header p {
-		color: #ffffff;
+		color: ;
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -2186,7 +2187,7 @@ input, select, textarea {
 	}
 
 		header.major:after {
-			background: #e44c65;
+			background: #00FFFF;     /* Aqua */
 			content: '';
 			display: inline-block;
 			height: 0.2em;
@@ -2465,12 +2466,12 @@ input, select, textarea {
 			}
 
 			.icon.alt:before {
-				color: #1c1d26 !important;
+				color: #0C1444 !important;
 				text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 			}
 
 		.icon.major {
-			background: #272833;
+			background: #0C1444;
 			border-radius: 100%;
 			cursor: default;
 			display: inline-block;
@@ -2503,7 +2504,7 @@ input, select, textarea {
 				}
 
 				.icon.major.alt:before {
-					color: #272833 !important;
+					color: #0C1444 !important;
 					text-shadow: 1px 0 0 #ffffff, -1px 0 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff;
 				}
 
@@ -2836,7 +2837,7 @@ input, select, textarea {
 		border-radius: 4px;
 		border: 0;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-		color: #ffffff !important;
+		color: #FFD700 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
@@ -2855,8 +2856,8 @@ input, select, textarea {
 		input[type="button"]:active,
 		.button:hover,
 		.button:active {
-			box-shadow: inset 0 0 0 1px #e44c65;
-			color: #e44c65 !important;
+			box-shadow: inset 0 0 0 1px #FFD700;
+			color: #FFD700 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2898,23 +2899,23 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #e44c65;
+			background-color: #FFD700;
 			box-shadow: none;
-			color: #ffffff !important;
+			color: #FFD700 !important;
 		}
 
 			input[type="submit"].primary:hover,
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #e76278;
+				background-color: #FFD700;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #e13652;
+				background-color: #FFD700;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2926,7 +2927,7 @@ input, select, textarea {
 		.button:disabled {
 			background-color: rgba(255, 255, 255, 0.3) !important;
 			box-shadow: none !important;
-			color: #ffffff !important;
+			color: #FFD700 !important;
 			cursor: default;
 			opacity: 0.25;
 		}
@@ -3057,7 +3058,6 @@ input, select, textarea {
 		}
 
 		.spotlight:before {
-			background-image: url("images/overlay.png");
 			content: '';
 			display: block;
 			height: 100%;
@@ -3083,7 +3083,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-			background: rgba(23, 24, 32, 0.95);
+		    background-color: #0C1444;
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3118,6 +3118,7 @@ input, select, textarea {
 
 		.spotlight.bottom .content {
 			border-top-width: 0.35em;
+            background-color: #0C1444;
 			bottom: 0;
 		}
 
@@ -3128,26 +3129,29 @@ input, select, textarea {
 			width: 28em;
 		}
 
-		.spotlight.left .content {
-			border-right-width: 0.35em;
-			left: 0;
-		}
-
+        .spotlight.left .content {
+            border-right-width: 0.35em;
+            background-color: #0C1444;
+            background: rgba(12, 20, 68, 0.95); /* same as #0C1444, 0.95 = transparency */
+        left: 0;
+        }
 		.spotlight.right .content {
 			border-left-width: 0.35em;
-			right: 0;
+            background-color: #0C1444;
+            background: rgba(12, 20, 68, 0.95); /* same as #0C1444, 0.95 = transparency */
+        right: 0;
 		}
 
 		.spotlight.style1 .content {
-			border-color: #e44c65;
+			border-color: #00FF00;     /* Lime */
 		}
 
 		.spotlight.style2 .content {
-			border-color: #5480f1;
-		}
+			border-color: #FF00FF;       /* Fuchsia */
+		} 
 
 		.spotlight.style3 .content {
-			border-color: #39c088;
+			border-color: #00FF00;     /* Lime */
 		}
 
 		.spotlight.inactive .content {
@@ -3201,7 +3205,7 @@ input, select, textarea {
 	}
 
 		.wrapper.style2 {
-			background: #e44c65;
+			background: #FFD700;
 		}
 
 			.wrapper.style2 input[type="text"]:focus,
@@ -3221,7 +3225,7 @@ input, select, textarea {
 			.wrapper.style2 .button:active {
 				background-color: rgba(255, 255, 255, 0.075) !important;
 				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
-				color: #ffffff !important;
+				color: #FFD700 !important;
 			}
 
 			.wrapper.style2 input[type="submit"]:active,
@@ -3235,8 +3239,8 @@ input, select, textarea {
 			.wrapper.style2 input[type="reset"].primary,
 			.wrapper.style2 input[type="button"].primary,
 			.wrapper.style2 .button.primary {
-				background-color: #ffffff;
-				color: #e44c65 !important;
+				background-color: #FFD700;
+				color: #FFD700 !important;
 			}
 
 				.wrapper.style2 input[type="submit"].primary:hover, .wrapper.style2 input[type="submit"].primary:active,
@@ -3248,7 +3252,7 @@ input, select, textarea {
 				.wrapper.style2 .button.primary:active {
 					background-color: rgba(255, 255, 255, 0.075) !important;
 					box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5) !important;
-					color: #ffffff !important;
+					color: #FFD700 !important;
 				}
 
 				.wrapper.style2 input[type="submit"].primary:active,
@@ -3313,7 +3317,7 @@ input, select, textarea {
 /* Dropotron */
 
 	.dropotron {
-		background: rgba(39, 40, 51, 0.965);
+		background: #0C1444;
 		border-radius: 4px;
 		box-shadow: 0 0.075em 0.35em 0 rgba(0, 0, 0, 0.125);
 		list-style: none;
@@ -3330,6 +3334,7 @@ input, select, textarea {
 			.dropotron > li a, .dropotron > li span {
 				border: 0;
 				color: rgba(255, 255, 255, 0.75);
+                background: #0C1444;
 				display: block;
 				padding: 0.1em 1em;
 				text-decoration: none;
@@ -3340,7 +3345,7 @@ input, select, textarea {
 			}
 
 			.dropotron > li.active > a, .dropotron > li.active > span {
-				color: #e44c65;
+				color: #0C1444;
 			}
 
 		.dropotron.level-0 {
@@ -3353,7 +3358,7 @@ input, select, textarea {
 				-webkit-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
 				transform: rotate(45deg);
-				background: #272833;
+				background: #0C1444;
 				content: '';
 				display: block;
 				height: 1em;
@@ -3374,7 +3379,7 @@ input, select, textarea {
 	}
 
 	#header {
-		background: rgba(39, 40, 51, 0.965);
+        background: #0C1444;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
@@ -3388,6 +3393,7 @@ input, select, textarea {
 
 		#header h1 {
 			height: inherit;
+            background: #0C1444;
 			left: 1.25em;
 			line-height: inherit;
 			margin: 0;
@@ -3397,11 +3403,13 @@ input, select, textarea {
 
 		#header nav {
 			position: absolute;
+            background: #0C1444;
 			right: 1em;
 			top: 0;
 		}
 
 			#header nav ul {
+                background: #0C1444;
 				margin: 0;
 			}
 
@@ -3430,11 +3438,12 @@ input, select, textarea {
 						}
 
 					#header nav ul li.active > a, #header nav ul li.active > span {
-						color: #e44c65;
+						color: #FFD700;
 					}
 
 					#header nav ul li > ul {
 						display: none;
+                        color: #0C1444;
 					}
 
 	body.landing #page-wrapper {
@@ -3442,7 +3451,7 @@ input, select, textarea {
 	}
 
 	body.landing #header {
-		background: transparent;
+		background: #0C1444;
 		box-shadow: none;
 		position: absolute;
 	}
@@ -3465,12 +3474,18 @@ input, select, textarea {
             }
 
 
-  /* Except the footer */
+  /* Except footer */
             #footer h3::before {
             content: none;
             counter-increment: none;
             }
 
+/* Disable automatic numbering in Profile Summary */
+        #PS h3::before,
+        #PS h4::before {
+          content: none;
+          counter-increment: none;
+        }
 
 
 
@@ -3480,8 +3495,8 @@ input, select, textarea {
 
 	#banner {
 		background-attachment: fixed;
-		background-color: #272833;
-		background-image: url("../../images/banner.jpg");
+		background-color: #05122d;
+        background-image: none;
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3499,20 +3514,12 @@ input, select, textarea {
 			width: 1%;
 		}
 
-		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-		}
-
+        #banner:after {
+          background-image: linear-gradient(
+            rgba(23, 24, 32, 0.25),
+            rgba(23, 24, 32, 0.25)
+          );
+        }
 		#banner .content {
 			display: inline-block;
 			margin-right: 1%;
@@ -3568,7 +3575,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #272833;
+		background: #0C1444;
 		padding: 6em 0;
 		text-align: center;
 	}
@@ -3591,7 +3598,7 @@ input, select, textarea {
 			}
 
 			#footer .icons .icon.alt:before {
-				color: #272833 !important;
+				color: #0C1444 !important;
 				text-shadow: 1px 0 0 rgba(255, 255, 255, 0.5), -1px 0 0 rgba(255, 255, 255, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5), 0 -1px 0 rgba(255, 255, 255, 0.5);
 			}
 
@@ -3709,19 +3716,20 @@ input, select, textarea {
 					overflow: hidden;
 				}
 
-				.spotlight .content {
-					background-color: #1c1d26;
-					border-width: 0 !important;
-					border-top-width: 0.35em !important;
-					bottom: auto !important;
-					left: auto !important;
-					padding: 4.5em 2.5em 2.5em 2.5em !important;
-					position: relative;
-					right: auto !important;
-					text-align: center;
-					top: auto !important;
-					width: 100% !important;
-				}
+			.spotlight .content {
+              background-color: #0C1444;
+              background: transparent;
+              border-width: 0 !important;
+              border-top-width: 0.35em !important;
+              bottom: auto !important;
+              left: auto !important;
+              padding: 4.5em 2.5em 2.5em 2.5em !important;
+              position: relative;
+              right: auto !important;
+              text-align: center;
+              top: auto !important;
+              width: 100% !important;
+            }
 
 					.spotlight .content ul.actions {
 						-moz-justify-content: center;
@@ -3851,10 +3859,10 @@ input, select, textarea {
 					max-height: 60vh;
 				}
 
-				.spotlight .content {
-					border-top-width: 0.2em !important;
-					padding: 3.25em 1.5em 1.25em 1.5em !important;
-				}
+			.spotlight .content {
+              border-top-width: 0.2em !important;
+              background: transparent !important;
+            }
 
 		/* Wrapper */
 
@@ -3873,6 +3881,8 @@ input, select, textarea {
 			#banner {
 				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
 				min-height: calc(100vh - 44px);
+                    background-color: #05122d;
+        
 			}
 
 				#banner:before {
@@ -3891,6 +3901,7 @@ input, select, textarea {
 						height: 9em;
 						width: 9em;
 					}
+                
 
 		/* Nav */
 
@@ -3966,7 +3977,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:before {
-						background: #e44c65;
+						background: #00FA9A;
 						color: rgba(255, 255, 255, 0.5);
 						content: '\f0c9';
 						display: block;

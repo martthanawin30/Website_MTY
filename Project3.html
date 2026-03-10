@@ -43,12 +43,642 @@
 					<div class="container">
 						<header class="major">
 							<h2>Assignment 3</h2>
-							<p>Coming soon</p>
+							<p>3D printing and 3D scanning</p>
 						</header>
+                        
+                        
+                        
+                        
 
 						<!-- Content -->
 							<section id="content">
-							
+                                
+
+                      <div style="display:flex; gap:18px; justify-content:center; align-items:flex-start; flex-wrap:nowrap; max-width:1500px; margin:0 auto;">
+
+                              <div style="flex:1 1 0; max-width:720px;">
+                                <img src="imagesV3/penholder_finalresult1.jpg"
+                                     alt="Final 3D printed tyre-stack pencil holder"
+                                     style="width:100%; height:650px; object-fit:cover; display:block; border-radius:10px;" />
+                              </div>
+
+                              <div style="flex:1 1 0; max-width:720px;">
+                               <iframe
+                                    src="https://poly.cam/capture/9C897DA4-8DC3-4AD3-BC16-E0F965C389F8"
+                                    style="width:100%; height:650px; border:0; border-radius:10px;"
+                                    loading="lazy"
+                                    allow="fullscreen; xr-spatial-tracking"
+                                  ></iframe>
+
+
+                                  </div>
+
+                                </div>
+
+                                
+                                 <!-- 1 -->
+										<h3>Introduction</h3> 
+                                
+                                <p>Project 3 is about 3D designing, and it is split into two parts.
+                                </p>
+                                
+                            <ol>
+                              <li>
+                                <strong>Part 1: 3D printing</strong><br>
+                                In Part 1, Is about designing a small model for 3D printing that would be difficult or impossible
+                                to manufacture using subtractive methods. I also design and perform printer tests to
+                                determine design rules and constraints before producing the final print. Finally, I
+                                summarize what I learned from the process. The printed part can use a maximum of 100 g of plastic (according to the slicer). The available printers are the
+                                Prusa i3 MK3+ and the Creality CR-10 MAX.
+                              </li>
+
+                              <li>
+                                <strong>Part 2: 3D scanning</strong><br>
+                                In Part 2, I 3D scan an object and document the scanning process and results.
+                              </li>
+                            </ol>
+                                
+                                <p></p>
+
+                             <!-- 2 -->
+                                    <h3> 3D printing</h3> 
+                                 <h4>Planning and preperation</h4>
+                              <p>
+                              First, I read the project’s instructions carefully and watched the
+                              <a href="https://www.youtube.com/watch?v=HTkwUh3QnQk" target="_blank" rel="noopener">Verkefni 3 - kynning</a>
+                              video regarding the assignment.
+                              The main constraint for the 3D printing part is to design a model that cannot be manufactured using
+                              subtractive processes (for example milling), meaning the geometry must rely on features that are
+                              practical with additive manufacturing.
+                            </p>
+
+                            <p>
+                              The figure below illustrates the difference between subtractive and additive manufacturing.
+                              Subtractive methods remove material from a larger stock and typically generate significant waste,
+                              while additive manufacturing builds the part layer by layer and can create complex internal or
+                              enclosed features with much less material waste.
+                            </p>
+
+                            <figure class="align-center" style="max-width: 800px; margin: 0 auto;">
+                              <span class="image">
+                                <img src="imagesV3/sub_vs_add_manuf.jpg" alt="Subtractive vs additive manufacturing" style="width:100%; height:auto;" />
+                              </span>
+                              <figcaption class="figcap">
+                                <em>Additive manufacturing (3D printing) compared to subtractive manufacturing (e.g., milling).</em>
+                              </figcaption>
+                            </figure>
+                                <p></p>
+                                
+                                
+                                <p>As I am a big Formula 1 fan, I decided to make something F1 related. I got some inspiration from <a href="https://www.printables.com/" target="_blank" rel="noopener">Printables</a>. I wanted to make something small but useful, and found a brilliant idea, that is a F1 tyres as pencil holders, the inspiration I got from <a href=" https://www.printables.com/model/315674-f1-tires-pencilpen-holder" target="_blank" rel="noopener">AstroStock</a>, this design includeds two stacks of Pirelli tyres, one wet type (blue) and one medium hardness type (yellow). Here below is an image that shows the design from AstroStock.
+                                
+                                 <figure class="align-center" style="max-width: 1000px; margin: 0 auto;">
+                              <span class="image">
+                                <img src="imagesV3/Astrostock_design.jpg" alt="Subtractive vs additive manufacturing" style="width:100%; height:auto;" />
+                              </span>
+                              <figcaption class="figcap">
+                                <em>3D printed model of F1 Tyre stack pencil holders, by <a href=" https://www.printables.com/model/315674-f1-tires-pencilpen-holder" target="_blank" rel="noopener">AstroStock</a> </em>
+                              </figcaption>
+                            </figure>
+                                </p>
+                                
+                               <p>
+                                  This 3D model is difficult to manufacture using subtractive methods (e.g., milling) because it includes a deep cylindrical cavity and curved sidewall features that are hard to access with cutting tools. Details such as grooves and text on a rounded surface would require complex multi-axis machining and multiple setups. In contrast, 3D printing can create these shapes directly while producing far less material waste.
+                                </p>
+                                
+                                
+                                <!-- 3 -->
+                                <h4>Design of the F1 – tire pen/pencil holder</h4>
+                                
+                                <p>For my 3D model I decided to make only one stack of tyres, including a bottom base. I wanted the Pirelli intermediate (green) tyre type:
+                                     <figure class="align-center" style="max-width: 400px; margin: 0 auto;">
+                              <span class="image">
+                                <img src="imagesV3/Green_inters_f1tyre.jpg" alt="Subtractive vs additive manufacturing" style="width:100%; height:auto;" />
+                              </span>
+                              <figcaption class="figcap">
+                                <em>Pirelli green intemediate F1-tyre type</em>
+                              </figcaption>
+                            </figure>
+                                
+                                </p>
+                                <p>
+                                  To design the 3D model of the F1 tyre pen/pencil holder, I used Fusion 360. I watched the following video, on <a href="https://www.youtube.com/watch?v=yij-OIpFvKY" target="_blank" rel="noopener"> How to extrude on a curved surface using Fusion 360 | Designing a tire</a>.
+                                </p>
+
+                               
+                                
+                                <p>To make the tyre patterns I made a sketch on the tyre surface. It took me a considerable amount of time to create the sketch for the circular sidewall patterns because it contained many small features. During the process I also noticed that the sketch became difficult to modify and reposition once several dimensions were fixed, which made the design less flexible and harder to iterate. Below is an image showing the pattern sketch I initially attempted to create.
+                                <figure class="align-center" style="max-width: 700px; margin: 0 auto;">
+                                  <span class="image">
+                                    <img src="imagesV3/tyrepattern_sketch.jpg" alt="Attempted sketch of the tyre pattern in Fusion 360" style="width:100%; height:auto;" />
+                                  </span>
+                                  <figcaption class="figcap">
+                                    <em>Attempted sketch of the tyre pattern in Fusion 360.</em>
+                                  </figcaption>
+                                </figure>
+                                </p>
+                                
+                                
+                                <!-- 4 -->
+                                <h4>Changing/simplifying the design</h4>
+                                <p> Because the original design became overly complex and difficult to modify, I decided to simplify it and model the tyre stack as a Pirelli soft compound tyre with a smooth sidewall surface and no detailed patterns. This change improves manufacturability for FDM 3D printing, a smoother surface reduces the amount of small toolpath segments, decreases the computational load in the slicer, and typically shortens the print time while improving the likelihood of a clean surface finish. The soft compound tyre has a smooth appearance like the reference shown below.
+                                 <figure class="align-center" style="max-width: 450px; margin: 0 auto;">
+                              <span class="image">
+                                <img src="imagesV3/softcompund.jpg" alt="Subtractive vs additive manufacturing" style="width:100%; height:auto;" />
+                              </span>
+                              <figcaption class="figcap">
+                                <em>Soft compound tyre type that will be used for the 3D model</em>
+                              </figcaption>
+                            </figure>
+                                </p>
+                                
+                                <p>
+                                   <strong>Deciding the parameters:</strong> to choose the inner diameter of the pen holder, I first measured the diameter of a typical pen/pencil from my pencil case, which was approximately 8–10 mm. To ensure the holder could store several pens and pencils at once, I set the inner diameter of the holder cavity to 50 mm. The table below shows the main parameters used for the design.
+                   
+                                    
+                                    <figure class="align-center" style="max-width: 900px; margin: 0 auto;">
+                              <span class="image">
+                                <img src="imagesV3/3Dmodel_parameters.jpg" alt="parameters" style="width:100%; height:auto;" />
+                              </span>
+                              <figcaption class="figcap">
+                                <em>User parameters used in the design of the F1-tyre pencil/pen holder</em>
+                              </figcaption>
+                            </figure>
+                                </p>
+                       
+                                
+                                
+                                   <!-- 5 -->
+                                  <h4>Designing process of the 3D model in Fusion 360</h4>
+                                <p>First step of the design, was drawing the main structure, including the tyre stack and the base. The outcome looked like this.
+                                
+                                   <figure class="align-center" style="max-width: 1000px; margin: 0 auto;">
+                              <span class="image">
+                                <img src="imagesV3/3dmodel_structure.jpg" alt="main structure" style="width:100%; height:auto;" />
+                              </span>
+                              <figcaption class="figcap">
+                                <em>Main structure of the 3D F1-tyre pen/pencil holder</em>
+                              </figcaption>
+                            </figure>
+                                
+                                </p>
+                                
+                                <p>After completing the drawing of the main structure, I did the boss extrusion on the surface of the top tyre with text, and Formula logo on the base surface. For guidance I watched the following video on how to add  <a href="https://www.youtube.com/watch?v=yij-OIpFvKY" target="_blank" rel="noopener"> Extruded text along circular path</a>. Here below is an image showing how added a text on a circular path.
+                                
+                                
+                                <figure class="align-center" style="max-width: 750px; margin: 0 auto;">
+                              <span class="image">
+                                <img src="imagesV3/PZERO_text.jpg" alt="pzero text" style="width:100%; height:auto;" />
+                              </span>
+                              <figcaption class="figcap">
+                                <em>Main structure of the 3D F1-tyre pen/pencil holder</em>
+                              </figcaption>
+                            </figure></p>
+                                
+                                <P>I used 3 point arc tool to create the two arcs along the side of the path, added a concentric relation to the ID tyre circle. The original F1 tyre is made by Pirelli, and has its logo on top. However, I wanted to make a little adjustment, as I swapped out that Pirelli logo for my name initials MTY. I extruded an text “MTY DESIGN” in the same font as the “P ZERO” text, which was in Artifakt Element Black.</P>
+                                
+                             <p>
+                              Next, was inserting and F1 logo image into Fusion 360 and sketch over it. For guidance on how to do this, I watched the video below.
+                            </p>
+                                
+                            <div style="max-width:850px; margin:0 auto;">
+                              <iframe
+                                src="https://www.youtube.com/embed/HsJ0Tkqrdd8?si=C8KaHHaVYCpJPR7w"
+                                title="Inserting an image and sketching over it in Fusion 360"
+                                style="width:100%; height:550px; border:0; border-radius:10px;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen>
+                              </iframe>
+                            </div>
+
+                            <br>
+                                
+                            <p>I searched the logo on google, and saved the image as jpg, the I chose insert canvas in the fusion design tab, and uploaded the jpg image to a plane. I created a sketch on the plane where the logo was, and put a couple of points/dots along the edge of the logo, and then draw lines and three point arcs to connect those points, to create outlines for the image. Below are images showing the sketch outline on the F1 logo. The first image shows the canvas visible in the background, and the second image shows the canvas hidden.
+                                </p>
+                                
+                             <div style="display:flex; gap:16px; justify-content:center; align-items:flex-start; flex-wrap:nowrap; max-width:1800px; margin:0 auto;">
+
+                              <figure class="align-center" style="flex:1; max-width:800px; margin:0; text-align:center;">
+                                <span class="image">
+                                  <img src="imagesV3/F1logo_outline_backg.jpg"
+                                       alt="F1 logo sketch outline with the canvas visible"
+                                       style="width:100%; height:auto;" />
+                                </span>
+                                <figcaption class="figcap">
+                                  <em>Sketch outline of the F1 logo with the canvas visible.</em>
+                                </figcaption>
+                              </figure>
+
+                              <figure class="align-center" style="flex:1; max-width:800px; margin:0; text-align:center;">
+                                <span class="image">
+                                  <img src="imagesV3/F1logo_outline_hidden.jpg"
+                                       alt="F1 logo sketch outline with the canvas hidden"
+                                       style="width:100%; height:auto;" />
+                                </span>
+                                <figcaption class="figcap">
+                                  <em>Sketch outline of the F1 logo with the canvas hidden.</em>
+                                </figcaption>
+                              </figure>
+                                 
+                                
+                            </div>
+                                <p></p>
+                                <p>Finally, I extruded the sketch on the bottom base surface. </p>
+                                
+                               
+            
+                                
+                                <!-- 6 -->
+                                <h4>Full design drawn in Fusion 360</h4>
+                                
+                                  
+                                  <p>
+                                          Below is a full view of the completed 3D model of the F1-tyre pencil holder. You can view the underlying sketches by clicking
+                                          <strong>“Open in Fusion”</strong> at the top of the viewer panel.
+                                        </p>
+                                
+                                        <div style="max-width:1000px; margin:0 auto;">
+                                          <iframe
+                                            src="https://a360.co/4spSsr0?mode=embed"
+                                            width="100%"
+                                            height="800"
+                                            style="border:0;"
+                                            allowfullscreen>
+                                          </iframe>
+                                        </div>
+                                
+                                
+                                 <!-- 6 -->
+                                <h4>Preparing for 3D printing test</h4>
+                              
+                                <p>
+                                  To prepare for the printing tests and to understand how to develop useful design rules and constraints for my model,
+                                  I first reviewed the reference page provided in the project instructions from FabAcademy:
+                                  <a href="https://fabacademy.org/2020/labs/leon/students/adrian-torres/week05.html" target="_blank" rel="noopener">
+                                    FabAcademy – Week 05 (3D Scanning and Printing)
+                                  </a>.
+                                </p>
+
+                                <p>
+                                  Next, I downloaded and installed
+                                  <a href="https://www.prusa3d.com/page/prusaslicer_424/" target="_blank" rel="noopener">PrusaSlicer</a> application
+                                  on my computer o I could slice my models and estimate print time and material usage for the Prusa MK3+ printer available in the FabLab, which is the most commonly used 3D printer for our work.
+                                    
+                                        <figure class="align-center" style="max-width: 750px; margin: 0 auto;">
+                              <span class="image">
+                                <img src="imagesV3/PrusaSlicer_download.jpg" alt="pzero text" style="width:100%; height:auto;" />
+                              </span>
+                              <figcaption class="figcap">
+                                <em>PrusaSlicer download page</em>
+                              </figcaption>
+                            </figure>
+                                </p>
+                                
+                                
+
+                                <p>
+                                  Since my tyre-stack design mainly consists of cylindrical features, fillets, and small extruded/engraved details,
+                                  I wanted my test prints to focus specifically on these geometries. I also looked for examples of how other students
+                                  approached testing, and I found a useful idea on Friðrik Valur’s project page, where he used a “mini all-in-one”
+                                  3D printer test:
+                                  <a href="https://frikki2801.github.io/TolvustuddFramleidsla/Verkefni3.html#3DTest" target="_blank" rel="noopener">
+                                    Friðrik Valur – Verkefni 3 (3D - printing test)
+                                  </a>.
+                                  I downloaded the test model from Thingiverse
+                                  <a href="https://www.thingiverse.com/thing:2806295" target="_blank" rel="noopener">*MINI* All In One 3D printer test</a>
+                                  and opened it in Fusion 360 to inspect the included features and understand how similar tests could be applied
+                                  to my own design.
+                                    
+                                      
+            
+                                </p>
+                                
+                                <p>To generate design rules that are directly relevant to my tyre-stack pen holder, I designed a custom 3D test plate in Fusion 360. Instead of using a generic printer test, I focused only on the features that matter for my final part: cylindrical geometry (diameter accuracy), filleted edges, and extruded/engraved text and logos. This approach reduces unnecessary print time and provides clearer, stronger design constraints that can be applied directly to the final tyre-stack model. A full Fusion 3D view below shows the final test plate design used for printing trials.                     
+                                </p>
+                                
+                                
+                                 <div style="max-width:1000px; margin:0 auto;">
+                                          <iframe
+                                            src="https://a360.co/4cwUn8x?mode=embed"
+                                            width="100%"
+                                            height="800"
+                                            style="border:0;"
+                                            allowfullscreen>
+                                          </iframe>
+                                        </div>
+                                
+                                   <!-- 7 -->
+                                <h4> Design rules and constraints:</h4>
+                                <p>From the three printing tests (cylinder/diameter test, fillet test, and text/logo extrusion test), I defined the key design rules for the final tyre-stack pen holder:</p>
+
+                                <ol>
+                                  <li>
+                                    <strong>1. Diameter / cylinder accuracy </strong> (ID compensation):
+                                    Circular features do not print exactly to their nominal CAD dimensions, so the final inner diameter (ID) must be
+                                    adjusted using a small compensation based on the measured error to achieve the intended fit.
+                                  </li>
+
+                                  <li>
+                                    <strong>2. Fillets </strong>(minimum radius for clean edges):
+                                    Very small fillet radii can print rough or lose definition, so the tyre-stack uses a minimum fillet radius on all
+                                    visible edges to improve surface quality and keep the part support-free.
+                                  </li>
+
+                                  <li>
+                                    <strong>3. Text/logo details </strong>(minimum readable feature size):
+                                    The text and F1 logo must use sufficient stroke thickness and emboss/deboss depth so fine details do not merge or
+                                    disappear during printing.
+                                  </li>
+                                </ol>
+                                <p></p>
+                                
+                                
+                                
+                                 <!-- 7 -->
+                                <h4>Performing the 3D printing test</h4>
+                                <p>To perform the printing test, I exported the Fusion 360 model as a 3MF file and imported it into PrusaSlicer. For this project we use the Original Prusa i3 MK3S & MK3S+ printer. In PrusaSlicer, I selected the 0.20 mm print profile (layer height), set 15% infill, chose PLA as the filament, and printed without a brim.</p>
+                                
+                                <p>  Based on the slicer preview, the estimated print time for the test plate is approximately 1 hour and 20 minutes, and the estimated material usage is about 14 g of filament (13.94 g). The selected print settings and the slicer time/material estimates are shown in the images below.
+                                    
+                                    <figure style="text-align:center; margin: 0;">
+                                  <!-- Row 1 -->
+                                  <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+                                    <img src="imagesV3/Testplate_slice.visual.jpg" style="width:35%; min-width:260px; margin:6px;" alt="Slice visual">
+                                    <img src="imagesV3/Testplate_mater.time.jpg" style="width:35%; min-width:260px; margin:6px;" alt="Material and time estimate">
+                                  </div>
+
+                                  <!-- Row 2 -->
+                                  <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+                                    <img src="imagesV3/printsettings.jpg" style="width:35%; min-width:260px; margin:6px;" alt="Print settings">
+                                    <img src="imagesV3/test_slicedinfo.jpg" style="width:35%; min-width:260px; margin:6px;" alt="Sliced information">
+                                  </div>
+
+                                  <figcaption style="margin-top:10px; font-style: italic;">
+                                    Slice information of the test plate.
+                                  </figcaption>
+                                </figure>
+                                </p>
+                                
+                                <p>To start the printing, I exported the 3MF file in PrusaSlicer as G-code, and used a USB stick and moved the file there, and connected the USB with a Sim card which was attached to the printer. Below are images and a video showing the printing setup and the 3D printing process for the test plate.          
+                                 <figure style="text-align:center; margin: 0;">
+
+                                  <!-- Row 1 -->
+                                  <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+                                    <img src="imagesV3/printtest_station.jpg"
+                                         style="width:38%; min-width:260px; margin:6px;"
+                                         alt="3D printing test setup station">
+                                    <img src="imagesV3/printtest_process.jpg"
+                                         style="width:38%; min-width:260px; margin:6px;"
+                                         alt="3D printing test in progress">
+                                  </div>
+
+                                  <!-- Row 2 -->
+                                  <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+                                    <video controls
+                                           style="width:70%; min-width:260px; margin:6px; border-radius:8px;"
+                                           title="3D printing test video">
+                                      <source src="videosV3/3Dprint_test.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                    </video>
+                                  </div>
+
+                                  <figcaption style="margin-top:10px; font-style: italic;">
+                                    Process of the 3D printing test.
+                                  </figcaption>
+
+                                </figure>   </p>
+                                
+                                
+                                <!-- 8 -->
+                                <h4>Result of the 3D printing test</h4>
+                                <p>
+                                  Below is the result of the 3D printing test plate. The print worked out well overall and all three tests were successful:
+                                  the cylinder/diameter features, the fillet samples, and the extruded “MTY DESIGN” text. However, the engraved title text
+                                  did not print clearly, as seen in the images, likely because the text features were too small and/or the engraving depth
+                                  was too shallow for the selected layer height. Nonetheless, the main design constraints relevant to my tyre-stack pencil
+                                  holder were satisfied, and the test provided useful guidelines for selecting appropriate diameters, minimum fillet sizes,
+                                  and readable text/logo feature dimensions for the final print.
+
+                                <figure style="text-align:center; margin: 0;">
+                                  <div style="display:flex; justify-content:center; gap:12px; flex-wrap:nowrap; max-width:1500px; margin:0 auto;">
+                                    <img src="imagesV3/printtest_result1.jpg"
+                                         style="width:32%; min-width:260px; margin:6px;"
+                                         alt="3D printing test plate result 1">
+                                    <img src="imagesV3/printtest_result2.jpg"
+                                         style="width:32%; min-width:260px; margin:6px;"
+                                         alt="3D printing test plate result 2">
+                                    <img src="imagesV3/printtest_result3.jpg"
+                                         style="width:32%; min-width:260px; margin:6px;"
+                                         alt="3D printing test plate result 3">
+                                  </div>
+
+                                  <figcaption style="margin-top:10px; font-style: italic;">
+                                    Result of the 3D printing test plate.
+                                  </figcaption>
+                                </figure>
+                                </p>
+                                
+                                 <!-- 9 -->
+                                <h4>Making adjustments to the 3D model and printing the final version</h4>
+                                
+                               <p>
+                                  Since the printing test plate produced good results, only minor changes were made before printing the final model.
+                                  To improve visibility and overall appearance, I increased the emboss depth of the F1 logo from 1 mm to 2 mm, and I
+                                  increased the text emboss depth from 0.8 mm to 1.0 mm. Below is an image showing the slicer preview of the final 3D model. According to the preview, the estimated print time
+                                  is approximately <code>6 hours and 20 minutes</code>, and the estimated material usage is about
+                                  <code>98 g</code> of filament (98.23 g). This is just under the maximum allowed material limit of
+                                  <code>100 g</code>.
+
+                               <figure class="align-center" style="max-width: 1000px; margin: 0 auto;">
+                              <span class="image">
+                                <img src="imagesV3/Final3dprint_slicerinfo.jpg" alt="pzero text" style="width:100%; height:auto;" />
+                              </span>
+                              <figcaption class="figcap">
+                                <em>Pruca Sclicer preview of the final 3D model</em>
+                              </figcaption>
+                            </figure>
+                                </p>
+                                
+                               <p>
+                                  Since printing the final 3D model takes a long time, I decided not to start the print in the afternoon while many other
+                                  students were running shorter test prints or quick model prints. Instead, I started the printer at around 6 PM
+                                  and let it run overnight.
+                                </p>
+                                
+                                 <!-- 10 -->
+                                <h4>Final result of the 3D printing model</h4>
+                                
+                              <p>
+                              The final result of the 3D printed F1 tyre-stack pencil holder is shown below. The outcome was very good, the surfaces
+                              printed cleanly, the edges are smooth, and the details (logo and text) are clearly visible.
+                            </p>
+
+                            <figure style="text-align:center; margin: 0;">
+                              <div style="display:flex; justify-content:center; gap:12px; flex-wrap:nowrap; max-width:1500px; margin:0 auto;">
+                                <img src="imagesV3/penholder_finalresult2.jpg"
+                                     style="width:32%; min-width:260px; margin:6px;"
+                                     alt="Final 3D printed tyre-stack pencil holder - view 1">
+                                <img src="imagesV3/penholder_finalresult3.jpg"
+                                     style="width:32%; min-width:260px; margin:6px;"
+                                     alt="Final 3D printed tyre-stack pencil holder - view 2">
+                                <img src="imagesV3/penholder_finalresult1.jpg"
+                                     style="width:32%; min-width:260px; margin:6px;"
+                                     alt="Final 3D printed tyre-stack pencil holder - view 3">
+                              </div>
+
+                              <figcaption style="margin-top:10px; font-style: italic;">
+                                Final result of the 3D printed F1 tyre-stack pencil holder.
+                              </figcaption>
+                            </figure>
+                                <p></p>
+                                
+                                
+                                
+                                
+                                
+                                  <!-- 11 -->
+                                    <h3> 3D scanning</h3> 
+                                
+                                <p>To prepare for the 3D scanning part of the project, I first looked for a suitable mobile scanning application. From reviewing previous student projects, I noticed that several students used <a href="https://poly.cam/" target="_blank" rel="noopener">Polycam</a>, so I downloaded it from the App Store to my phone. I used Polycam’s free trial in order to export the scans as STL files, which allowed me to import and visualize them in Fusion 360.
+                                    
+                                        <figure style="text-align:center; margin: 0;">
+                              <div style="display:flex; justify-content:center; gap:12px; flex-wrap:nowrap; max-width:1300px; margin:0 auto;">
+                                <img src="imagesV3/Polycam_app.jpg"
+                                     style="width:20%; min-width:80px; margin:6px;"
+                                     alt="Final 3D printed tyre-stack pencil holder - view 1">
+                                <img src="imagesV3/polycam_website.jpg"
+                                     style="width:30%; min-width:900px; margin:6px;"
+                                     alt="Final 3D printed tyre-stack pencil holder - view 2">
+                              </div>
+
+                              <figcaption style="margin-top:10px; font-style: italic;">
+                               Polycam 3D scanning application
+                              </figcaption>
+                            </figure>
+                            
+                                </p>
+                                
+                                <p>For my scans, I chose two objects: my <code>Rabona deodorant</code> and a small <code>Lionel Messi figurine</code>. I began by scanning the deodorant using the photo-based method with a freely moving camera and poor lighting conditions, which resulted in a low-quality scan. To improve the outcome, I switched to Polycam’s guided capture mode in order to record the object more systematically from all angles. However, the deodorant scan still turned out poorly because the bottle is partially transparent/reflective, which makes photogrammetry difficult and reduces tracking accuracy. The results of the scan of both objects are shown below in a full 3D embedded view. </p>
+                                
+                               
+                                
+                                <div style="display:flex; gap:16px; justify-content:center; align-items:flex-start; flex-wrap:wrap; max-width:1600px; margin:0 auto;">
+                                    
+                                    
+                                    
+                                     <div style="flex:1 1 520px; max-width:800px;">
+                                    <iframe
+                                      src="https://poly.cam/capture/429FF897-9897-453B-96E6-9C96AF4CF1B2"
+                                      style="width:100%; height:600px; border:0; border-radius:10px;"
+                                      loading="lazy"
+                                      allow="fullscreen; xr-spatial-tracking"
+                                    ></iframe>
+                                  </div>
+  
+                                  <div style="flex:1 1 520px; max-width:800px;">
+                                    <iframe
+                                      src="https://poly.cam/capture/608D9C8E-CD1C-40FC-B1D9-C3D214466D87"
+                                      style="width:100%; height:600px; border:0; border-radius:10px;"
+                                      loading="lazy"
+                                      allow="fullscreen; xr-spatial-tracking"
+                                    ></iframe>
+                                  </div>
+
+
+                                </div>
+                                
+                                <p>The body of the Messi figure produced a clear scan, but the head was incomplete, most likely because reflections from the lighting reduced Polycam’s ability to track and reconstruct the surface properly. After that, I scanned an object I expected to produce a cleaner result, a <code> flower pot with an artificial plant</code>. I placed it on a patterned cloth and performed the scan in the living room under decent, even lighting. The results of the scan of the flower pot is shown here below.</p>
+                                
+                                  <div style="max-width:800px; margin:0 auto;">
+                                  <iframe
+                                    src="https://poly.cam/capture/9C897DA4-8DC3-4AD3-BC16-E0F965C389F8"
+                                    style="width:100%; height:600px; border:0; border-radius:10px;"
+                                    loading="lazy"
+                                    allow="fullscreen; xr-spatial-tracking"
+                                  ></iframe>
+                                </div>
+                                
+                                <p>The scanning outcome for the flower pot was much better than for the previous two objects. Polycam captured the overall shape of the pot well, although some edges were still not perfectly sharp. Since I was not fully satisfied with the result, I decided to scan one more object. I chose a small <code>Red Bull F1 car model</code>. For this scan, I moved to the house entrance where the lighting was even better, and I placed the car on a white drawer surface.This time the result was strong, the scan captured most of the car’s geometry, including edges, angles, and even smaller details in the livery. However, when viewed in the interactive 3D viewer, the flower pot scan appeared smoother and overall cleaner than the F1 car scan. Therefore, the flower pot produced the best scan result out of the four objects I tested. Below is the final scan result of the Red Bull car.</p>
+                                
+                                <div style="max-width:800px; margin:0 auto;">
+                                  <iframe
+                                    src=" https://poly.cam/capture/2E37C5A0-6718-4402-B1E7-89C03E978C22"
+                                    style="width:100%; height:600px; border:0; border-radius:10px;"
+                                    loading="lazy"
+                                    allow="fullscreen; xr-spatial-tracking"
+                                  ></iframe>
+                                </div>
+                                
+                                <p>
+                                  By clicking the <code>"Toggle display mode"</code> button (located below the <code>"Sign up"</code> button in the 3D viewer),
+                                  you can switch between different visualization modes, such as <em>mesh</em>, <em>clay</em>, and the normal <em>textured</em> surface view.
+                                </p>
+                                
+                                 <!-- 10 -->
+                             
+                                <h3>What I learned from the 3D printing and 3D scanning processes</h3>
+
+                                <p>
+                                  From the 3D printing process, I learned how to design a 3D model and set up an effective workflow, including defining
+                                  design rules and creating targeted printing tests. I also learned how to evaluate the printed test results and use them
+                                  to make informed adjustments to the original model. In addition, I maintained consistent documentation throughout the
+                                  project and improved my HTML skills by adding MP4 videos, embedding YouTube videos, and embedding interactive 3D views of models from Fusion.
+                                </p>
+
+                               <p>
+                                  In the second part of the project, I learned how to use the Polycam 3D scanning application to capture objects as
+                                  3D meshes and embed the interactive 3D viewer from Polycam on my project page.
+                                </p>
+
+                                
+
+                                
+
+                               
+                                
+                                
+                                
+                                
+                                
+                                
+
+                                
+                            
+                                
+                                
+                           
+                                
+                                
+                             
+
+
+
+
+                                
+                                
+
+                                
+                                
+                                
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
 							</section>
 
 					</div>

@@ -43,30 +43,483 @@
 					<div class="container">
 						<header class="major">
 							<h2>Assignment 2</h2>
-							<p>Coming soon</p>
+							<p>Parametric design and computer aided cutting</p>
 						</header>
-						<div class="row gtr-150">
-							<div class="col-8 col-12-medium">
 
-								<!-- Content -->
-									<section id="content">
-								
+							<!-- Content -->
+                            <section id="content">
+
+                            <div style="display:flex; gap:18px; justify-content:center; max-width:1000px; margin:0 auto;">
+                              <a href="#" class="image fit" style="flex:1; margin:0;">
+                                <img src="imagesV2/Fullmodel_finalresult1.jpg" alt=""
+                                     style="width:100%; height:520px; object-fit:cover; display:block;" />
+                              </a>
+
+                              <a href="#" class="image fit" style="flex:1; margin:0;">
+                                <img src="imagesV2/final.stickers.jpg" alt=""
+                                     style="width:100%; height:385px; object-fit:cover; display:block;" />
+                              </a>
+                            </div>
+
+                           
+                        
+                     
+
+								 <!-- 1 -->
+                                    <p></p>
+										<h3>Introduction</h3> 
+                                        <p> The second assignment focuses on parametric design and computer-aided cutting. The project is divided into two parts:
+                                        </p> 
+                                        <ol> 
+                                            <li> <strong>Part 1: Vinyl cutting (individual)</strong><br> Design and cut a sticker using a Roland vinyl cutter. The maximum cutting area is 100 × 50 cm (one vinyl sheet).</li> 
+                                            <li> <strong>Part 2: Laser cutting: parametric press-fit model (individual)</strong><br> Design a parametric press-fit model in Autodesk Fusion 360 (or another CAD program). The model must be scalable through parameters such as material thickness, height, and width, and include at least three joints. The parts are then cut on a laser cutter and assembled.  </li> 
+                                        <ul> 
+                                            <li>Available laser-cutting materials: 3 mm and 5 mm acrylic sheets (500 × 500 mm). Additional materials may include cardboard, 6 mm birch plywood, 2 mm acrylic, and other offcuts depending on availability. </li>
+                                            <li>Group work (Part 2): In teams of up to three students, we choose a laser cutter and determine its kerf through test cuts. </li>
+                                        </ul> 
+                                        </ol>
+                                        <p>The results are documented on this website page, and design files are added to a databank:  <a href="https://than.gs/m/1525631" target="_blank" rel="noopener">Thangs</a> </p>
+                                        
+                                        
+                                        <!-- 2 -->
+										<h3>Vynil cutting</h3> 
+                                         <h4>Planning and preperation</h4>
+                                        <p> I watched a youtube video on how a vinyl cutter works <a href="https://www.youtube.com/watch?v=R_p-NGuKx3w" target="_blank" rel="noopener">Intro to vynil cutting</a>. They use a Roland cutter, the same model as the one we use in the Fab Lab. The video explains the difference between heat-transfer vinyl and sticker vinyl, and for this project we are using a sticker vinyl sheet. I have used a vinyl cutter before, having made a sticker in primary school.
+                                        I also watched a video tutorial on <a href="https://www.youtube.com/watch?v=M5PoUZfpu4Y" target="_blank" rel="noopener">Making a sticker in Inkscape</a> . After thinking about a design, I decided to create a text sticker with my initials (MTY) and include the logo of my boyhood football club, Breiðablik. I found a PNG version of the logo online and imported it into Inkscape, placing it on a blank document alongside the text.
+                                        Finally, I opened Document Properties in the Inkscape SVG file and set the page size to 1000 x 500 mm to match the maximum cutting area.</p> 
+                                        <p>To remove the PNG background from the Breiðablik logo, I used Trace Bitmap in Inkscape. I selected Single scan, chose Brightness cutoff as the detection mode, and set the threshold to 0.5. This converted the logo into a scalable vector (so it can be resized without losing quality).
+                                            
+                                               <figure class="align-center" style="max-width: 600px; margin: 0 auto;">
+                                              <span class="image">
+                                                <img src="imagesV2/tracebitmab.jpg" alt="header code" style="width:100%; height:auto;" />
+                                              </span>
+                                              <figcaption class="figcap"><em>Trace bitmap settings I used for the text and logo</em></figcaption>
+                                            </figure>
+                         
+                                        </p>
+                                        <p>Next, I opened Fill and Stroke and adjusted the stroke style so the outline thickness was set to 0.02 mm.</p>
+                                         <h4>Cutting the stickers</h4>
+                                        <p>Once the design was finished, I went to the FabLab in the VR-III building to cut the stickers using a Roland vinyl cutter. For this part of the process, I received help from the teaching assistant, Magnús. I decided to make two versions of the MTY text: one in a normal bold italic style and another in a Varsity Shadow style. To send the design to the cutter, I needed to convert the SVG file to a PDF. First, I selected all objects using <code>Ctrl + A</code> and arranged them close together to save material on the vinyl sheet. Then I used  <code>Ctrl + Shift + R</code> to resize the document to fit the printable area.
+                                        </p>
+                                        <p>However, a problem came up when I saved the document as a PDF, the designs did not export as outline paths but instead appeared like normal PNG images, even though Inkscape was set to Outline display mode. It took me some time to figure out what was causing this, and I searched online as well as asked ChatGPT for help. In the end, I discovered that the issue was caused by the Fill and Stroke settings. To get a proper outline-style export, the stroke paint had to be set to a flat black color, and the fill needed to be turned off. After making these changes, the final PDF outline sheet looked like this:
+                                            <figure class="align-center" style="max-width: 700px; margin: 0 auto;">
+                                              <span class="image">
+                                                <img src="imagesV2/PDF_outlinesheet.jpg" alt="header code" style="width:100%; height:auto;" />
+                                              </span>
+                                              <figcaption class="figcap"><em>PDF ouline sheet for the stickers</em></figcaption>
+                                            </figure>
+                                        </p>
+                                        <p>After solving this problem, I was able to begin the cutting process. I copied the PDF file to a USB stick and opened it on the computer connected to the vinyl cutter. I chose a black gloss vinyl sheet because I wanted a clean, neutral look. I then inserted the sheet into the cutter, selected the <code>“Edge”</code> option on the machine, and started the cutting. The cutting itself took only about a minute and was very successful. A video showing the cutting process can be seen below.
+                                        </p>
+                                        <div style="text-align: center;">
+                                              <video controls width="700">
+                                                <source src="videosV2/Vinyl%20cutting_project2.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                              </video>
+                                            </div>
+                                        
+                                        <p>After cutting, I used a pocket-knife to weed out the unwanted vinyl blank spaces. The shadowed text and the Breiðablik logo were the most challenging parts because of the small details. Once the weeding was finished, I applied transfer paper Scotch tape over the design, peeled away the backing paper from the sticky side of the vinyl, and transferred the stickers onto my laptop. The result is shown below:
+                                            
+                                       <figure style="text-align:center; margin: 0;">
+                                          <img src="imagesV2/peeled.stickers.jpg" style="width:32%; margin:6px;" alt="Weeded stickers">
+                                          <img src="imagesV2/taped.stickers.jpg" style="width:32%; margin:6px;" alt="Stickers with transfer tape">
+                                          <img src="imagesV2/final.stickers.jpg" style="width:32%; margin:6px;" alt="Final stickers on laptop">
+
+                                          <figcaption style="margin-top:10px; font-style: italic;">
+                                            Final result of the vinyl cutting.
+                                          </figcaption>
+                                        </figure>
+
+                                        </p>
+                                        
+                                        
+                                         <!-- 3 -->
+										<h3>Pressfit modelling and laser cutting</h3> 
+                                        <h4>Planning and preperation</h4>
+                                        <p>To decide what kind of press-fit model I wanted to design, I browsed Pinterest for ideas. In the end, I chose to create a keychain stand that also includes an open storage box for small everyday items such as my wallet, glasses, and similar accessories. I used the following Pinterest design as inspiration for my own model:  <a href="https://www.pinterest.com/pin/839991768038757825/" target="_blank" rel="noopener">Pinterest design</a>
+                                            
+                                            <figure class="align-center" style="max-width: 600px; margin: 0 auto;">
+                                              <span class="image">
+                                                <img src="imagesV2/pinterest_keychainstand.jpg" alt="header code" style="width:100%; height:auto;" />
+                                              </span>
+                                              <figcaption class="figcap"><em>Inspirational design of an keychain stand on pinterest</em></figcaption>
+                                            </figure>
+                                        </p>
+                                        
+                                        <p>
+                                            For the CAD work, I used Autodesk Fusion 360, as recommended in the assignment instructions. I already had Fusion installed on my computer from a previous course, so I could start designing right away. Before modelling, I watched a few tutorials on parametric design and on converting a 3D model into a 2D layout suitable for laser cutting.   
+                                        </p>
+                            <div style="display:flex; gap:16px; justify-content:center; align-items:flex-start; flex-wrap:wrap; max-width:1200px; margin:0 auto;">
+
+                          <iframe
+                            src="https://www.youtube.com/embed/USVU4J5Al-s?si=2NLaAU_kqGi8iVRe"
+                            title="YouTube video player"
+                            style="flex:1 1 520px; max-width:580px; width:100%; height:315px; border:0; border-radius:10px;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                          </iframe>
+
+                          <iframe
+                            src="https://www.youtube.com/embed/yhHhSVoL1RQ?si=-nLRKfBZ-foW_fEm"
+                            title="YouTube video player"
+                            style="flex:1 1 520px; max-width:580px; width:100%; height:315px; border:0; border-radius:10px;"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                          </iframe>
+
+                        </div>
+                        
+                            <br>
+                                        
+                                        <p> Initially, I planned to make the press-fit model out of plywood, but the lab had a limited supply available. Therefore, I chose to use 5 mm acrylic instead.
+                                        </p>
+                                        
+                                          <!-- 4 -->
+                                        <h4>Kerf test</h4>
+                                        <p>To account for laser kerf, my classmates and I performed a kerf offset test. Kerf is defined as the width of material removed by the laser during cutting. 
+                                        The two images below are illustrative examples of laser kerf and were found online <a href="    https://esab.com/us/nam_en/esab-university/blogs/what-is-cutting-kerf-and-why-is-it-important/." target="_blank" rel="noopener">esab.com.</a>
+                                            
+                                            <figure style="max-width:900px; margin:0 auto; text-align:center;">
+                                          <table style="margin:0 auto; border-collapse:collapse;">
+                                            <tr>
+                                              <td style="padding:8px;">
+                                                <img src="imagesV2/kerfcut1.jpg" alt="Kerf cut example 1" style="width:100%; max-width:420px; height:auto;">
+                                              </td>
+                                              <td style="padding:8px;">
+                                                <img src="imagesV2/kerfcut2.jpg" alt="Kerf cut example 2" style="width:100%; max-width:420px; height:auto;">
+                                              </td>
+                                            </tr>
+                                          </table>
+
+                                          <figcaption style="margin-top:8px;">
+                                            <em>Kerf cut examples</em>
+                                          </figcaption>
+                                        </figure>
+                                            
+                                        </p>
+                                        
+                                        <p> To carry out the kerf offset test, we first drew nine (equal-sized) rectangles and a rectangular frame around them in Fusion 360. We then exported the sketch as a DXF file and opened it in Inkscape, where we prepared an SVG file for laser cutting and ensured the line width was set to 0.02 mm. Images of the Fusion sketch are shown below.
+                                              
+                                             <figure class="align-center" style="max-width: 900px; margin: 0 auto;">
+                                              <span class="image">
+                                                <img src="imagesV2/kassar_kerf.test.jpg" alt="header code" style="width:100%; height:auto;" />
+                                              </span>
+                                              <figcaption class="figcap"><em>Drawing of the rectangles in for kerf test in Fusion</em></figcaption>
+                                            </figure>
+                                        </p>
+                                        
+                                        <p>For our first kerf-test attempt, we used a small 3 mm plywood plate. Because the plywood piece was narrower than our full frame design (200 mm total width), we had to scale the frame down in Inkscape to make it fit on the material. This first attempt was not successful, as the laser did not cut completely through the small rectangles, so the test pieces could not be removed cleanly. The incomplete cut was likely due to incorrect laser settings, such as too high speed or too low power or the plywood not sitting perfectly flat on the machine. The outcome of this failed kerf test is shown below.
+                                            
+                                            <figure class="align-center" style="max-width: 350px; margin: 0 auto;">
+                                              <span class="image">
+                                                <img src="imagesV2/kassar_kerf.test_plywood.jpg" alt="header code" style="width:100%; height:auto;" />
+                                              </span>
+                                              <figcaption class="figcap"><em>Failed kerf test on 3 mm plywood</em></figcaption>
+                                            </figure>
+                                        </p>
+                                        
+                                        <p> For the second attempt, we used a 3 mm transparent acrylic plastic, the same material as for my design. The cut was complete. A short video below shows the laser cutting out the rectangles.</p>
+                                        
+                                          <div style="text-align: center;">
+                                              <video controls width="700">
+                                                <source src="videosV2/kerf_rectcut_acrylic.mp4" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                              </video>
+                                            </div>
+                                        
+                                        <p> After cutting out the rectangles, we calculated the kerf, by measuring the difference between the width of the total gap and total width of the rectangles, and divide the value by number of lines, which is ten. The kerf was roughly measured with a vernier calliper. The outcome was: <strong>Kerf</strong> = (13.46cm - 13.30cm)/10 = 0.016 cm = <strong>0.16 mm</strong>. Images below show the outcome of the kerf testing on a 3 mm acrylic plastic material.
+                                            
+                                             <figure style="text-align:center; margin: 0;">
+                                          <img src="imagesV2/kerf_result1.jpg" style="width:35%; margin:6px;" alt="Weeded stickers">
+                                          <img src="imagesV2/kerf_result2.jpg" style="width:35%; margin:6px;" alt="Stickers with transfer tape">
+                                          <img src="imagesV2/kerf_result3.jpg" style="width:35%; margin:6px;" alt="Final stickers on laptop">
+
+                                          <figcaption style="margin-top:10px; font-style: italic;">
+                                            Final outcome of the kerf test on a 3 mm transparent acrylic plastic.
+                                          </figcaption>
+                                        </figure>
+            
+                                        </p>
+                                        
+                                        
+                                          <!-- 5 -->
+                                          <h4>Design of the pressfit model</h4>
+                                        <p>I wanted to design a keychain stand similar to the one I found on Pinterest, but with only one hook level instead of two. To begin the process, I sketched the parts/plates on my iPad with rough estimated dimensions and recorded the main measurements in an Excel table.
+                                        My design consists of four types of plates: 1× P1 base, 1× P2 main vertical support (with a window cutout), 2× P3 curved side frames, 2× P4 tray walls, and 5× P5 hooks. The model uses two joint types: press-fit joints and finger joints. An overview of these joint types (along with other common laser-cut joint options) can be found here: <a href="https://fab.cba.mit.edu/classes/863.21/EECS/people/jan/week1_laser_cutting.html" target="_blank" rel="noopener">laser cutting joints</a> and on the image below.
+                                            
+                                            <figure class="align-center" style="max-width: 800px; margin: 0 auto;">
+                                              <span class="image">
+                                                <img src="imagesV2/joint_options.jpg" alt="header code" style="width:100%; height:auto;" />
+                                              </span>
+                                              <figcaption class="figcap"><em>Press-fit and finger joint, underlined with green, along with other joint options</em></figcaption>
+                                            </figure>
+                            
+                                        </p>
+                                        <p>Here below are the rough sketches of the plates, along with the Excel table with main dimensions.
+                                            
+                                               <figure style="text-align:center; margin: 0;">
+                                          <img src="imagesV2/Ipad_sketch1.jpg" style="width:35%; margin:6px;" alt="Weeded stickers">
+                                          <img src="imagesV2/Ipad_sketch2.jpg" style="width:35%; margin:6px;" alt="Stickers with transfer tape">
+                                          <img src="imagesV2/Exceltable.dim.jpg" style="width:70%; margin:6px;" alt="Final stickers on laptop">
+
+                                          <figcaption style="margin-top:10px; font-style: italic;">
+                                            Final outcome of the kerf test on a 3 mm transparent acrylic plastic.
+                                          </figcaption>
+                                        </figure>
+                                        </p>
+                                        
+                                        <p>After preparing the design, I began modelling the stand in Fusion 360 with one main requirement in mind: the model needed to be parametric and scalable. I chose "P1 base width" as the primary driving parameter, meaning the overall size of the model can be scaled simply by changing that single value. The only independent parameter is the plate thickness, which also determines the joint thickness.
+                                        To help with creating joints that automatically update with the parameters, I followed this tutorial on using the Combine tool to generate automatically sized finger joints: <a href="https://www.youtube.com/watch?v=9U2JPfkQpsE" target="_blank" rel="noopener">Automatically sized finger-joints</a>.
+                                        Below is a table showing the user parameters used in the design. Some dimensions differ slightly from my original Excel table because I refined the model during development and linked more measurements to P1 base width using proportional ratios.
+                                        
+                                          <figure class="align-center" style="max-width: 1000px; margin: 0 auto;">
+                                              <span class="image">
+                                                <img src="imagesV2/paremeters_pressfit.jpg" alt="header code" style="width:100%; height:auto;" />
+                                              </span>
+                                              <figcaption class="figcap"><em>User parameters used in the design of the keychain-stand.</em></figcaption>
+                                            </figure>
+                                        </p>
+                                        
+                                        
+                                            <!-- 6 -->
+                                         <h4>Design drawn in Fusion 360</h4>
+                                        <p>
+                                          Below is a full view of the completed 3D model of the keychain stand. You can view the underlying sketches by clicking
+                                          <strong>“Open in Fusion”</strong> at the top of the viewer panel.
+                                        </p>
+
+                                        <div style="max-width:1200px; margin:0 auto;">
+                                          <iframe
+                                            src="https://a360.co/4snKsqp?mode=embed"
+                                            width="100%"
+                                            height="800"
+                                            style="border:0;"
+                                            allowfullscreen>
+                                          </iframe>
+                                        </div>
+
+
+                                        
+
+                                          <!-- 7 -->
+                                         <h4>Laying out the bodies and applying kerf compensation</h4>
+                                        <p>After designing the model, I watched the following video, from the channel "Fab Lab Akureyri" to lay out flat sheet components to prepare for CAM, and export the fusion file as DXF file with kerf compensation and open it in Inkscape.
+                                        </p>
+                                <div style="max-width:850px; margin:0 auto;">
+                                  <iframe
+                                    src="https://www.youtube.com/embed/D1Btaqhog9E"
+                                    title="Fab Lab Akureyri: Fusion360 DXF and Inkscape"
+                                    style="width:100%; height:550px; border:0; border-radius:10px;"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen>
+                                  </iframe>
+                                </div>
+                                <br>
+                                     
+                                        
+                                    <p> To layout the bodies, I used align tool in modify, and selected the bottom plate as the body to align from and the rest of the plates as aligned to. Next I switched from Design to Manufacture on the top left side of the toolbar. Then I created a new setup, and made sure that the z-axis was facing upwards, on a chosen face. The setup can be seen down below in a full view.
+                                        </p>
+                                        
+                                         <div style="max-width:1200px; margin:0 auto;">
+                                          <iframe
+                                            src="https://a360.co/4d7uRa2?mode=embed"
+                                            width="100%"
+                                            height="800"
+                                            style="border:0;"
+                                            allowfullscreen>
+                                          </iframe>
+                                        </div>
+
+                                        
+                                        <p>Following that I chose the kerf compensation, where I created a new 2D cutting profile under fabrication, and selected all the 11 plates as face contours. I also made sure the 2D cutting operation used the correct compensation settings. In addition, I created a new laser cutter tool.
+                                      The settings below show the configuration I used with a kerf value of <strong>0.16 mm</strong>, based on our kerf test.
+                                        </p>
+                                        
+                                  <div style="display:flex; gap:18px; justify-content:center; flex-wrap:wrap;">
+
+                                  <figure style="flex:1; min-width:200px; max-width:320px; margin:0; text-align:center;">
+                                    <img src="imagesV2/2Dprofile_settings.jpg" alt="2D Cutting profile settings" style="width:100%; height:auto;">
+                                    <figcaption class="figcap"><em>2D cutting profile: compensation settings</em></figcaption>
+                                  </figure>
+
+                                  <figure style="flex:1; max-width:900px; margin:0; text-align:center;">
+                                    <img src="imagesV2/new_tool.jpg" alt="New laser cutter tool settings" style="width:100%; height:auto;">
+                                    <figcaption class="figcap"><em>New laser cutter tool created in Fusion manufacture</em></figcaption>
+                                  </figure>
+
+                                </div>
+
+                                <!-- Third image below (full width) -->
+                                <figure class="align-center" style="max-width: 800px; margin: 18px auto 0; text-align:center;">
+                                  <img src="imagesV2/lasercutter_kerf1.jpg" alt="Kerf value used for the laser cutter" style="width:100%; height:auto;">
+                                  <figcaption class="figcap"><em>(0.16 mm) Kerf value used for a laser cutter tool</em></figcaption>
+                                </figure>
+                                        
+                                <p>The first image down below shows a simulation of the laser cutter cutting out the parts, using our kerf compensation. The final step is going the post process tab, and choosing AutoCAD DXF as a post processor file and storing the output file to my project2 folder on my onedrive.  The post-processing settings I used are shown in the second image.
+                                        </p>
+                                        
+                                        
+                                        <div style="display:flex; gap:18px; justify-content:center; flex-wrap:wrap;">
+
+                                      <figure style="flex:1;max-width:600px; margin:0; text-align:center;">
+                                        <img src="imagesV2/Lasercut_simulation.jpg" alt="Laser cutting simulation" style="width:100%; height:auto;">
+                                        <figcaption class="figcap"><em>Laser cutting simulation with kerf compensation.</em></figcaption>
+                                      </figure>
+
+                                      <figure style="flex:1; max-width:800px; margin:0; text-align:center;">
+                                        <img src="imagesV2/postprocessor.jpg" alt="Post processor settings" style="width:100%; height:auto;">
+                                        <figcaption class="figcap"><em>Post processor settings (post as AutoCAD DXF).</em></figcaption>
+                                      </figure>
+
+                                    </div>
+                                        
+                                        
+                                           <!-- 8 -->
+                                         <h4>Editing the dxf file in Inkscape</h4>
+                                        
+                                        <p>I then uploaded the dxf file in Inkscape, and followed the instructions in the <a href="https://www.youtube.com/watch?v=D1Btaqhog9E&list=PLKOxluKQR2PLucnLX6aH98TfmjZO_TJWj&index=2E" target="_blank" rel="noopener">Fab Lab Akureyri</a> video.
+                                           In the document properties of the SVG file, I set the page size to 500 × 500 mmand arranged the parts on the sheet so they were ready for laser cutting. I set the outline stroke width to <strong>0.02 mm</strong>, and then saved the file as an SVG. The final layout of the parts is shown below:
+                                            
+                                            <figure class="align-center" style="max-width: 2000px; margin: 0 auto;">
+                                              <span class="image">
+                                                <img src="imagesV2/keychain_layout_ready_svg.jpg" alt="header code" style="width:100%; height:auto;" />
+                                              </span>
+                                              <figcaption class="figcap"><em>Part layout in Inkscape, ready for laser cutting.</em></figcaption>
+                                            </figure>
+                                            
+                                            </p>
+                                        
+                                        
+                                             <!-- 9 -->
+                                         <h4>Testing the joints</h4>
+                                        
+                                        <p>Before cutting out my whole model, I did a test on the joints. I created a reduced-scale version of three parts from the model and arranged them as small test plates. I used a kerf value of 0.16 mm, which I determined from the kerf test. I then followed the same workflow as before to prepare the SVG file for cutting. Then I moved the file to the computer, attcahed to the <strong>Epilog</strong> Laser cut machine. The resulting test plate looked like this</p>
+                                        
+                                        
+                                         <div style="max-width:900px; margin:0 auto;">
+                                          <iframe
+                                            src="https://a360.co/4aOPvug?mode=embed"
+                                            width="100%"
+                                            height="800"
+                                            style="border:0;"
+                                            allowfullscreen>
+                                          </iframe>
+                                        </div>
+                                        
+                                   <p>
+                                      The test results were decent. The joints clicked together well, but the fit was quite tight, and it was difficult to separate the plates again. As I was cutting a 5 mm acrylic sheet, I used the following laser settings: 8% speed and 100% power (with frequency set to 100%). The image and video below show the cutting process and the final result of the test.
+                                    </p>
+
+                                    <div style="display:flex; gap:18px; justify-content:center; flex-wrap:wrap;">
+
+                                      <figure style="flex:1; min-width:260px; max-width:420px; margin:0; text-align:center;">
+                                        <img src="imagesV2/laser_printsettings1.jpg" alt="Print settings for laser cutting test 1" style="width:100%; height:auto;">
+                                        <figcaption class="figcap"><em>Print settings for laser cutting test 1.</em></figcaption>
+                                      </figure>
+
+                                      <figure style="flex:1; min-width:260px; max-width:420px; margin:0; text-align:center;">
+                                        <img src="imagesV2/kerf_0.16.jpg" alt="Outcome of joint test using kerf 0.16 mm" style="width:100%; height:auto;">
+                                        <figcaption class="figcap"><em>Outcome of the joint test (kerf = 0.16 mm).</em></figcaption>
+                                      </figure>
+
+                                    </div>
+
+                                    <div style="text-align:center; margin-top:18px;">
+                                      <video controls style="width:100%; max-width:700px;">
+                                        <source src="videosV2/kerf_jointtest1.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                      </video>
+                                    </div>
+                                        
+                                   <p>
+                                      Because the initial joint test was not ideal, I slightly adjusted the kerf value and ran additional tests using
+                                      <strong>0.15 mm</strong> and <strong>0.155 mm</strong>. Using a smaller kerf value produces a looser press-fit, the joints will have more clearance, which increases the gap between the tabs and slots. The images below show the laser tool setup with the different kerf values,
+                                      as well as the result from joint test, with three different Kerf widths.
+                                    </p>
+
+                                    <div style="display:flex; gap:18px; justify-content:center; flex-wrap:wrap;">
+
+                                      <figure style="flex:1; max-width:820px; margin:0; text-align:center;">
+                                        <img src="imagesV2/lasercut_kerfs.jpg" alt="Laser cutter tool with different kerf values" style="width:100%; height:auto;">
+                                        <figcaption class="figcap"><em>Laser cutter tool settings with different kerf values.</em></figcaption>
+                                      </figure>
+
+                                      <figure style="flex:1; max-width:820px; margin:0; text-align:center;">
+                                        <img src="imagesV2/alljoint_kerf_results.jpg" alt="Results of all joint tests" style="width:100%; height:auto;">
+                                        <figcaption class="figcap"><em>Results from joint test, with three different Kerf widths.</em></figcaption>
+                                      </figure>
+
+                                    </div>
+
+                                    <p>
+                                      After cutting the test plates with kerf values of <strong>0.15 mm</strong> and <strong>0.155 mm</strong>, I found that
+                                      <strong>0.15 mm</strong> produced tabs that were too loose, while <strong>0.155 mm</strong> provided a perfect press-fit.
+                                    </p>
+                                        
+                                        
+                                        
+                                           <!-- 10 -->
+                                     <h4>Laser cutting the pressfit-model and final result</h4>
+                                       <p>
+                                          Since <strong>0.155 mm</strong> gave the best fit in the joint tests, I applied that kerf compensation to the full press-fit
+                                          model and created a new layout file in Inkscape using the same workflow described in Section 3.6. 
+                                          Before cutting the final model, I learned that several other students had experienced incomplete cuts when sending the entire
+                                          layout to the laser in a single print. To reduce the risk of this happening, the lab assistant teacher, Magnús,
+                                          recommended lowering the cutting speed to 5%. In addition, I cut the parts as a 5 separate prints
+                                          instead of cutting the full layout at once. The images below show the individual print jobs on the machine and the finished parts cut from a 500 × 500 mm sheet of 5 mm acrylic.
+                                        </p>
+
+                                        <div style="display:flex; gap:18px; justify-content:center; flex-wrap:wrap;">
+
+                                          <figure style="flex:1; max-width:520px; margin:0; text-align:center;">
+                                            <img src="imagesV2/Lasercut_prints.jpg" alt="Separate laser cutter print jobs" style="width:100%; height:auto;">
+                                            <figcaption class="figcap"><em>Separate print jobs used to cut the final parts.</em></figcaption>
+                                          </figure>
+
+                                          <figure style="flex:1; max-width:820px; margin:0; text-align:center;">
+                                            <img src="imagesV2/finalmodel_cut.jpg" alt="Final parts cut from acrylic sheet" style="width:100%; height:auto;">
+                                            <figcaption class="figcap"><em>Final parts cut from a 500 × 500 mm sheet of 5 mm acrylic.</em></figcaption>
+                                          </figure>
+
+                                        </div>
+                                        
+                                        <p>
+                                          With these settings, the laser cut was successful, and all parts released easily from the acrylic sheet. I then began
+                                          assembling the keychain stand. The joints fit together smoothly, although they were slightly looser than on the test plate.
+                                          This was most likely due to the adjusted cutting settings and/or small variations in the laser cutter’s performance.
+                                          Even though the press-fit was a bit looser than I originally intended, the stand is still sturdy and works well for its
+                                          purpose. I decided not to run another cut, since that would waste valuable material. In addition, the supply of 5 mm acrylic
+                                          sheets was almost finished, and only 3 mm sheets were available, which did not match my design goals. The final result is
+                                          shown below.
+                                            
+                                            <figure style="max-width:1600px; margin:0 auto; text-align:center;">
+                                              <div style="display:flex; gap:18px; justify-content:center; flex-wrap:nowrap;">
+                                                <img src="imagesV2/Fullmodel_finalresult1.jpg" alt="Final keychain stand result (view 1)"
+                                                     style="width:50%; max-width:800px; height:auto;">
+                                                <img src="imagesV2/Fullmodel_finalresult2.jpg" alt="Final keychain stand result (view 2)"
+                                                     style="width:50%; max-width:800px; height:auto;">
+                                              </div>
+                                              <figcaption class="figcap"><em>Final outcome of the keychain stand</em></figcaption>
+                                            </figure>
+                                        </p>
+                                        
+                                        
+                                              <!-- 10 -->
+                                     <h4>Design files</h4>
+                                      <p>
+                                      The design files for the keychain stand are uploaded to my
+                                      <a href="https://than.gs/m/1525631" target="_blank" rel="noopener">Thangs</a> databank.
+                                    </p>
+
+
+
+
 									</section>
-
-							</div>
-							<div class="col-4 col-12-medium">
-
-								<!-- Sidebar -->
-									<section id="sidebar">
-										<section>
-										
-										</section>
-									</section>
-
-							</div>
-						</div>
-					</div>
-				</div>
+                                </div>
+                            </div>
 
 			<!-- Footer -->
 				<footer id="footer">
@@ -112,7 +565,7 @@
                       </ul>
                 </footer>
 
-		</div>
+	
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
